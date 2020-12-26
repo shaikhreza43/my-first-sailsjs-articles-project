@@ -1,0 +1,23 @@
+<h3 class="display-4 mb-4">List Of All Articles</h3>
+<table class="table table-bordered">
+    <thead>
+        <th>#</th>
+        <th>Article Title</th>
+        <th>Article Body</th>
+    </thead>
+    <tbody>
+        <% articles.forEach(function(article){%>
+            <tr>
+                <td>
+                    <%=article.id%>
+                </td>
+                <td>
+                    <%=article.title%>
+                </td>
+                <td>
+                    <%=article.body%>
+                </td>
+            </tr>
+            <% })%>
+    </tbody>
+</table>
